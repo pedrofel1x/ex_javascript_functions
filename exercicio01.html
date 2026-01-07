@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <meta charset="UTF-8">
+    <head>
+    </head>
+    <body>
+        <script>
+
+            // Cria uma função anónima que seja logo executada, e que faça console.log da string isto foi demasiado rápido!;
+            (function() {
+                console.log("Isto foi demasiado rápido")
+            })() 
+
+            function obterNome(nome){
+                return function(){
+                    return `Nome: ${nome}`
+                }
+            }
+
+        </script>
+    </body>
+</html>
