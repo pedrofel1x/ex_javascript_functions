@@ -11,9 +11,10 @@
                 console.log("Isto foi demasiado rápido")
             })() 
 
-            function formulario(campo1, campo2){
-                return function(nome, contacto){
-                    return `${campo1}: ${nome} \n ${campo2}: ${contacto}`
+            function formulario(campo1){
+                return function(nome){
+                    return `${campo1}: ${nome}` // Fica mais agradavél, com os dois pontos o espaço
+                    // return campo1 + nome // Apenas junta as duas strings
                 }
             }
             const frase = formulario()
