@@ -11,11 +11,12 @@
                 console.log("Isto foi demasiado rápido")
             })() 
 
-            function obterNome(nome){
-                return function(){
-                    return `Nome: ${nome}`
+            function formulario(){
+                return function(nome, contacto){
+                    return `Nome: ${nome} \n Contacto: ${contacto}`
                 }
             }
+            const frase = formulario()
 
         </script>
     </body>
