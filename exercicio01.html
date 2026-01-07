@@ -11,9 +11,9 @@
                 console.log("Isto foi demasiado rápido")
             })() 
 
-            function formulario(){
+            function formulario(campo1, campo2){
                 return function(nome, contacto){
-                    return `Nome: ${nome} \n Contacto: ${contacto}`
+                    return `${campo1}: ${nome} \n ${campo2}: ${contacto}`
                 }
             }
             const frase = formulario()
