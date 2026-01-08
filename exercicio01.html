@@ -11,6 +11,9 @@
                 console.log("Isto foi demasiado rápido")
             })() 
 
+
+            // Cria uma closure que construa campos de um formulário. Na primeira função devemos passar o nome do campo, e na
+            // segunda função devemos passar o resultado. Deverá gerar algo como: Nome: Vitor
             function formulario(campo1){
                 return function(nome){
                     return `${campo1}: ${nome}` // Fica mais agradavél, com os dois pontos o espaço
