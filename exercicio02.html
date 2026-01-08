@@ -36,12 +36,12 @@
             const somaIdades = () => ages.reduce((soma, contadorSoma) => soma + contadorSoma, valorInicial) // soma é a casa que recebe o calculo. contadorSoma é a posição do array. o valoInicial fim indica ao
 
             // 4.
-            const  {name: nome, category: categoria} = companies[0];
+            const {name: nome, category: categoria} = companies[0];
             console.log(`Nome: ${nome} \nCategoria: ${categoria}`);
 
             // 5.
-            // const {address: rua} = person;
-            // console.log(street);
+            const {street} = person.address;
+            console.log(street)
 
             // 6.
             const avaliar = () => companies.filter((contador) => (contador.start > 1996) && (contador.end <= 2004))
